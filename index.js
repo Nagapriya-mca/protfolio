@@ -36,3 +36,17 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = '/'
 })
+function showDialog(event) {
+    event.preventDefault(); // Prevent form from submitting
+
+    const name = document.getElementById('name').value;
+    const dialog = document.getElementById('confirmationDialog');
+    const message = document.getElementById('dialogMessage');
+    
+    message.textContent = `${name}, your message has been sent successfully!`;
+    dialog.showModal(); // Show the dialog
+  }
+
+  function closeDialog() {
+    document.getElementById('confirmationDialog').close(); // Close the dialog
+  }
