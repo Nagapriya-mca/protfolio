@@ -74,6 +74,7 @@ textarea{resize:none}
 @media only screen and (max-width: 37.5em){.heading-sec__sub{font-size:1.8rem}}
 .heading-sec__sub--lt{
     color:#333}
+@media only screen and (max-width: 37.5em){.heading-sm{font-size:1.8rem}}
 .heading-sm{
     font-size:2.2rem;
     text-transform:uppercase;
