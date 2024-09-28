@@ -196,7 +196,8 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action='#' class='contact__form' method='post'><input type='hidden' name='form-name' value='form 1' />
+          <form action='#' class='contact__form' method='post' onsubmit="return showDialog(event);">
+            <input type='hidden' name='form-name' value='form 1' />
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
@@ -235,6 +236,10 @@
               Submit
             </button>
           </form>
+          <dialog id="confirmationDialog">
+            <p id="dialogMessage"></p>
+            <button onclick="closeDialog()">close</button>
+          </dialog>
         </div>
       </div>
     </section>
